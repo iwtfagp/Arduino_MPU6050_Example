@@ -1,0 +1,7 @@
+為了量測MPU6050所測試的程式碼，基本上把程式寫入arduino，再把arduino和MPU6050的接線連起來之後即可使用
+
+MPU6050_raw是範例程式，可直接讀取MPU6050六軸的數值
+MPU6050_basic則是利用MPU6050_raw再經過修改，最後得到適合的字串給
+Calibration一樣是MPU6050的程式，但是可以把加速度計和陀螺儀轉換成角度了。
+
+WalkingIMUSystem裡面的release，目前可以搭配Calibration的arduino的程式，這樣即可直接運作，WalkingIMUSystem其實就是serial的連接程式，未來有需要也可以更換輸入的字串，來修改成別的東西的讀取程式。
